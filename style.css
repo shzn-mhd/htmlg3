@@ -18,57 +18,66 @@ body {
     background-color: #302f58;
 }
 
-header{
+header {
     display: flex;
-    justify-content: space-between; 
-    background-color: blue;
+    justify-content: space-between;
+    background-color: #302f58;
 }
-.right_nav{
+
+.right_nav {
     display: flex;
     padding: 20px;
-    padding-left: 100px;
-    
+    padding-left: 300px;
     align-items: center;
 }
-.right_nav h3{
+
+.right_nav h3 {
     color: white;
 }
-.nav-links{
-    flex:1;
+
+.nav-links {
+    flex: 1;
     padding-left: 100px;
 }
-.nav-links ul li{
+
+.nav-links ul li {
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
-    color:white;
+
+.nav-links ul li a {
+    color: white;
     font-size: 15px;
 
 }
-.left-nav{
+
+.left-nav {
     padding: 20px;
     padding-right: 25%;
 }
-.left-navlink{
+
+.left-navlink {
     display: flex;
 }
 
-.left-navlink ul li{
+.left-navlink ul li {
     display: flex;
     padding: 8px 12px;
     position: relative;
 }
-.left-navlink ul li a{
-    color:white;
+
+.left-navlink ul li a {
+    color: white;
     font-size: 15px;
 }
-#btn{
-    background-color: lightblue;
+
+#btn {
+    background-color: #31a2e3;
     padding: 10px;
     color: white;
     border-radius: 10%;
+    width: 100px;
 }
 
 
@@ -86,22 +95,23 @@ header{
     width: 100%;
     padding: 20px;
     top: 25%;
-   
-    
+    left: -6%;
+
+
 }
 
 .head-content-raw {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    
-    
+
+
 
 }
 
 .left {
     padding: 0 120px 0 0;
-   
+
 
 }
 
@@ -155,44 +165,43 @@ header{
     display: flex;
     flex-direction: column;
     position: relative;
-  
- }
- 
- .box1 {
-     width: 100px;
-     height: 100px;
-     background-color: #44db63;
+
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: #44db63;
     align-self: flex-end;
     position: absolute;
-   
- }
- 
- .box2{
-     width: 200px;
-     height: 300px;
-     align-self: center;
-     position: absolute;
-     top:30px;
-     right: 30px;
- 
-     
- }
- .box3{
-     width: 200px;
-     height: 200px;
-     align-self: flex-start;
-     position: absolute;
-     top: 200px;
-     left: 50px;
-    
- }
- .box2 img , .box3 img{
-     width: 100%;
-     height: 100%;
- }
+
+}
+
+.box2 {
+    width: 300px;
+    height: 250px;
+    align-self: center;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+
+
+}
+
+.box3 {
+    width: 250px;
+    height: 200px;
+    align-self: flex-start;
+    position: absolute;
+    top: 200px;
+    left: -30px;
+
+}
+
+.box2 img,
+.box3 img {
+    width: 100%;
+    height: 100%;
+}
 
 /* content section ends */
-
-
-
-
