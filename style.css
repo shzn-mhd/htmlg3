@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans serif;
     text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -21,6 +22,58 @@ body {
     justify-content: space-around;
    
    
+}
+header{
+    display: flex;
+    justify-content: space-between; 
+    background-color: blue;
+}
+.right_nav{
+    display: flex;
+    padding: 20px;
+    padding-left: 100px;
+    
+    align-items: center;
+}
+.right_nav h3{
+    color: white;
+}
+.nav-links{
+    flex:1;
+    padding-left: 100px;
+}
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:white;
+    font-size: 15px;
+
+}
+.left-nav{
+    padding: 20px;
+    padding-right: 25%;
+}
+.left-navlink{
+    display: flex;
+}
+
+.left-navlink ul li{
+    display: flex;
+    padding: 8px 12px;
+    position: relative;
+}
+.left-navlink ul li a{
+    color:white;
+    font-size: 15px;
+}
+#btn{
+    background-color: lightblue;
+    padding: 10px;
+    color: white;
+    border-radius: 10%;
 }
 
 
