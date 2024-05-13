@@ -16,12 +16,7 @@ body {
     font-family: "Roboto";
     background-color: #302f58;
 }
-.body-container {
-    display: flex;
-    justify-content: space-around;
-   
-   
-}
+
 
 
 
@@ -35,10 +30,8 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 70%;
+    width: 100%;
     padding: 20px;
-    left: 7%;
-    margin-left: 30px;
     top: 25%;
    
     
@@ -46,14 +39,16 @@ body {
 
 .head-content-raw {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    
     
 
 }
 
 .left {
     padding: 0 120px 0 0;
+   
 
 }
 
@@ -107,8 +102,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    
-    
   
  }
  
