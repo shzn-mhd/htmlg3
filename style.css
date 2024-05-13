@@ -1,18 +1,18 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans serif;
     text-decoration: none;
 }
 
-:root{
-    --bg-color:#222327;
-    --text-color:black;
-    --main-color:#29fd53;
+:root {
+    --bg-color: #222327;
+    --text-color: black;
+    --main-color: #29fd53;
 }
 
-body{
+body {
     font-family: "Roboto";
     background-color: #5e59e0;
 }
@@ -63,6 +63,85 @@ body{
     width: 100%;
     height: 100%;
 }
+
+/* content section starts */
+
+.head-content {
+    color: black;
+}
+
+.head-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 70%;
+    /* background-color: red;     */
+    padding: 20px;
+    left: 7%;
+    margin-left: 30px;
+    top: 25%;
+    
+}
+
+.head-content-raw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left {
+    padding: 0 120px 0 0;
+
+}
+
+.head-content h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: rgb(59, 41, 222);
+}
+
+
+.head-content h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+.head-content p {
+    padding-bottom: 40px;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+
+.head-content .btn1 {
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* outline: none; */
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: #31a2e3;
+    margin: 10px auto;
+}
+
+.head-content .btn2 {
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* outline: none; */
+    /* border: 2px solid #1d7f75; */
+    border: none;
+    color: black;
+    font-weight: 600;
+    background-color: white;
+}
+
+/* content section ends */
+
 
 
 
