@@ -7,6 +7,8 @@
     list-style: none;
 }
 
+
+
 :root {
     --bg-color: #222327;
     --text-color: black;
@@ -15,70 +17,133 @@
 
 body {
     font-family: "Roboto";
-    background-color: #302f58;
+
 }
+
+/* navigation section starts */
+
 
 header {
+
     display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    background-color: #302f58;
+    background: transparent;
+    padding: 28px 10%;
+    transition: all .50s ease;
+    caret-color: transparent;
+
+
+
 }
 
-.right_nav {
+.header::before {
+    content: "";
+    background-color: white;
+    height: 100px;
+
+}
+
+.logo {
     display: flex;
-    padding: 20px;
-    padding-left: 300px;
+    align-items: center;
+    color: #ffffff;
+}
+
+.logo i {
+    color: #ffffff;
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span {
+    color:#ffffff;
+    font-size: 3.7rem;
+    font-weight: 600;
+}
+
+
+
+.navbar {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar a {
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 5px 0;
+    margin: 0px 15px;
+    transition: all .50s ease;
+
+}
+
+
+ul li a {
+    display: block;
+    padding: 10px
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    padding: 10px 10px;
+    width: 10%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    border-radius: 10px;
+    background: #112c66
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+
+
+.navbar a:hover {
+    color: #e4a719;
+}
+
+.main {
+    display: flex;
     align-items: center;
 }
 
-.right_nav h3 {
-    color: white;
+.main a {
+    margin-right: 5px;
+    margin-left: 5px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 50%;
 }
 
-.nav-links {
-    flex: 1;
-    padding-left: 100px;
-}
 
-.nav-links ul li {
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
 
-.nav-links ul li a {
-    color: white;
-    font-size: 15px;
-
-}
-
-.left-nav {
-    padding: 20px;
-    padding-right: 25%;
-}
-
-.left-navlink {
-    display: flex;
-}
-
-.left-navlink ul li {
-    display: flex;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.left-navlink ul li a {
-    color: white;
-    font-size: 15px;
-}
-
-#btn {
-    background-color: #31a2e3;
-    padding: 10px;
-    color: white;
-    border-radius: 10%;
-    width: 100px;
-}
 
 
 
@@ -205,3 +270,63 @@ header {
 }
 
 /* content section ends */
+
+.parallax-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.parallax-item h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.parallax-item:first-child {
+    background-image: url('assets/1.jpeg');
+    background-size: cover;
+}
+
+.parallax-item:nth-child(2) {
+    background: #080808;
+    min-height: 300px;
+}
+
+.parallax-item:nth-child(3) {
+    background: url("assets/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+}
+
+.parallax-item:nth-child(4) {
+    background: #060606;
+    min-height: 300px;
+}
+.parallax-item:nth-child(5) {
+    background: url("assets/4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax Effect for DIV 3 */
+    min-height: 600px;
+}
+.parallax-item:nth-child(6) {
+    background: #060606;
+    min-height: 700px;
+}
+
+@media screen and (max-width: 768px) {
+    .parallax-item h2 {
+        font-size: 1.5rem;
+    }
+}
